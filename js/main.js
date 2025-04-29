@@ -150,7 +150,7 @@ function login() {
       loginMsg.style.color = "green";
       localStorage.setItem("currentUser", index);
       setTimeout(function () {
-        window.location.href = "../html/home.html";
+        window.location.href = "./html/home.html";
       }, 500);
 
       loginemail.value = "";
