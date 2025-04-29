@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    <!-- fonts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+     <title>login</title>
+  </head>
+  <body>
+    <section class="d-flex align-items-center justify-content-center "  >
+      <div class="form-con ">
+        <h1 class="main-title "> Login</h1>
+        <div class="form-floating mb-3">
+          <input type="email" class="form-control" id="email-input" placeholder="name@example.com">
+          <label for="email-input">Email address</label>
+        </div>
+        <div class="form-floating mb-3">
+          <input type="password" class="form-control" id="pass-input" placeholder="Password">
+          <label for="pass-input">Password</label>
+        </div>
+        <button onclick="login()" class="btn login-btn w-100">Login</button>
+        <p id="loginMsg"></p>
+        <p>Don’t have an account?<a class="link-sign" href="./html/signup.html">Sign Up</a></p>
+      </div>
+    </section>
+ 
+    <script src="js/main.js"></script>
+  </body>
+</html>

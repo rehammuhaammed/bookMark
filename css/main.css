@@ -1,0 +1,61 @@
+@font-face {
+  font-family: "Pacifico";
+  src: url(../fonts/Pacifico-Regular.ttf) format("truetype");
+}
+
+body {
+  font-family: "Pacifico", cursive;
+
+ background-image: url(../images/bg7.jpg);
+  background-size: cover;
+}
+section{
+  height: 100vh;
+}
+input,#msg{
+  font-family: "Bree Serif";
+}
+
+
+.main-title{
+  margin-bottom: 1rem;
+  color:  #056E5D;
+}
+.form-con {
+  width: 600px;
+  padding: 5.25rem 3.5rem;
+  background-color: #b2d3ce;
+  text-align: center;
+  border-radius: 1.625rem;
+  box-shadow: -5px 2px 30px -9px rgba(0, 0, 0, 1);
+}
+.form-con .form-control:focus {
+  border-color: #C7DED8;
+  box-shadow: 0 0 0 0.25rem #6d8c84;
+}
+.login-btn {
+  background-color: #0A4239;
+  margin-bottom: 0.75rem;
+  color: white;
+  font-size: 1.0625rem;
+}
+.login-btn:hover {
+  background-color: rgb(39, 76, 69);
+  color: white;
+}
+.link-sign {
+  text-decoration: none;
+  color: black;
+}
+.link-sign:hover {
+  text-decoration: underline;
+}
+.welcome{
+  text-align: center;
+  width: 50%;
+  padding: 5.25rem 3.5rem;
+  background-color: white;
+  border-radius: 1.625rem;
+  box-shadow: -5px 2px 30px -9px rgba(0, 0, 0, 1);
+
+}

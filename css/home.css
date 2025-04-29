@@ -1,0 +1,126 @@
+*,
+*::before,
+*::after {
+  transition: all 0.5s ease-in;
+}
+body {
+  font-family: "PT Sans Caption", sans-serif;
+  background-image: url(../images/bg7.jpg);
+  background-size:cover;
+  position: relative;
+}
+.main-title {
+  font-size: 50px;
+  font-weight: 500;
+  line-height: 3.75rem;
+  font-family: "Pacifico", cursive;
+  color: #056e5d;
+  width: fit-content;
+  position: relative;
+  padding: 8px 0px;
+  margin: 48px auto;
+}
+.main-title::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 25%;
+  left: 0;
+  bottom: 10px;
+  background-color: #61b3a5;
+  transition: height 350ms;
+  z-index: -1;
+}
+.main-title:hover::before {
+  height: 50%;
+}
+.sub-title {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  font-family: "Righteous", sans-serif;
+  background-image: linear-gradient(to right, #576c68, #759e9c);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.bookmarker-body {
+  border-style: dotted none;
+  border-width: 2px;
+}
+.bookmarker-body label {
+  font-weight: 600;
+  color: #056e5d;
+}
+.bookmarker-body i {
+  font-weight: 600;
+  line-height: 24px;
+}
+.form-control:focus {
+  border-color: #C7DED8;
+  box-shadow: 0 0 0 0.25rem #6d8c84;
+}
+.logOutBtn{
+  background-color: #056e5d;
+  
+  position: absolute;
+  right: 3%;
+  top: -8%;
+}
+.logOutBtn:hover {
+  background-color: #0a4239;
+  color: white;
+}
+.submitBtn {
+  background-color: #056e5d;
+  color: white;
+}
+.submitBtn:hover {
+  background-color: #0a4239;
+  color: white;
+}
+.table th{
+  color: #056e5d;
+}
+.table tbody td{
+  color: #0c5b4d;
+}
+.btn-visit {
+  background-color: #12bca1;
+  color: white;
+}
+.btn-visit:hover {
+  background-color: #239e89;
+  color: white;
+}
+.btn-delete {
+  background-color: #a91f2f;
+  color: white;
+}
+.btn-delete:hover {
+  background-color: #892e38;
+  color: white;
+}
+.modal-header .bomb {
+  font-size: 30px;
+}
+.body{
+  padding: 1rem 0rem;
+}
+.body p {
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 27px;
+  color: #352e28;
+  font-family: "Bree Serif", serif;
+}
+.rules i{
+font-size: 18px;
+line-height: 18px;
+color: #bb4120;
+}
+.rules li{
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+}
