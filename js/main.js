@@ -66,34 +66,48 @@ function sign_up() {
     }
   }
 }
-
 function validate_name() {
   formMsg.classList.add("d-none");
   var text = username.value;
+  var msgName = document.getElementById("msgName");
+
+  if (!msgName) {
+    msgName = document.createElement("p");
+    msgName.id = "msgName";
+    msgName.classList.add("m-2");
+    username.parentNode.appendChild(msgName);
+  }
+
   if (regexname.test(text)) {
     username.classList.remove("is-invalid");
     username.classList.add("is-valid");
+    msgName.classList.add("d-none");
   } else {
     username.classList.add("is-invalid");
     username.classList.remove("is-valid");
+    msgName.textContent = "Name must be 3–15 characters and can only include lowercase letters, numbers, and underscores.";
+    msgName.style.color = "red";
+    msgName.classList.remove("d-none");
   }
 }
+
 function validate_email() {
   formMsg.classList.add("d-none");
   var text = email.value;
+
   if (regexemail.test(text)) {
     email.classList.remove("is-invalid");
     email.classList.add("is-valid");
     msgE.classList.add("d-none");
   } else {
     email.classList.add("is-invalid");
-    msgE.classList.remove("d-none");
-    msgE.textContent =
-      "Please ensure your email contains at least one Character after and before (@) and ending with (.com) ";
-    msgE.style.color = "red";
     email.classList.remove("is-valid");
+    msgE.textContent = "Please enter a valid email like: example@domain.com";
+    msgE.style.color = "red";
+    msgE.classList.remove("d-none");
   }
 }
+
 function validate_pass() {
   formMsg.classList.add("d-none");
   var text = pass.value;
@@ -106,9 +120,7 @@ function validate_pass() {
   } else {
     pass.classList.add("is-invalid");
     pass.classList.remove("is-valid");
-    msg.textContent =
-      "Weak Password: Please ensure your password is at least 8 characters long and contains at least one letter and one number.";
-
+    msg.textContent = "Password must be at least 8 characters, include 1 letter and 1 number.";
     msg.style.color = "red";
     msg.classList.remove("d-none");
   }
